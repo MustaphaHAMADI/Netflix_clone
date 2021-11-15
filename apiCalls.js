@@ -1,16 +1,16 @@
 // const axios = require("axios");
 
 // const one =
-//   "https://api.themoviedb.org/3/trending/movie/week?api_key=4df8b563036925de112dcd96a1b25d4a&language=fr";
+//   "https://api.themoviedb.org/3/trending/movie/week?api_key=&language=fr";
 
 // const two =
-//   "https://api.themoviedb.org/3/discover/movie?api_key=4df8b563036925de112dcd96a1b25d4a&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate";
+//   "https://api.themoviedb.org/3/discover/movie?api_key=&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate";
 
 // const three =
-//   "https://api.themoviedb.org/3/discover/movie?api_key=4df8b563036925de112dcd96a1b25d4a&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=27&with_watch_monetization_types=flatrate";
+//   "https://api.themoviedb.org/3/discover/movie?api_key=&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=27&with_watch_monetization_types=flatrate";
 
 // const four =
-//   "https://api.themoviedb.org/3/discover/movie?api_key=4df8b563036925de112dcd96a1b25d4a&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=53&with_watch_monetization_types=flatrate";
+//   "https://api.themoviedb.org/3/discover/movie?api_key=&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=53&with_watch_monetization_types=flatrate";
 
 // const requestOne = axios.get(one);
 // const requestTwo = axios.get(two);

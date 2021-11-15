@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+::-webkit-scrollbar {
+  max-width: 10px;
+  height: 7px;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(77, 77, 77, 0.548);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.category-title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 15px 0;
+}
+.category__cnt {
+  margin: 40px 0 40px 40px;
+}
+
+.movies__cnt {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  column-gap: 7px;
+}
+.movie {
+  position: relative;
+}
+
+.movie__img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.movie__title {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(243, 243, 243);
+  text-shadow: 4px 4px 15px rgba(255, 255, 255, 0.5);
+}
+.movie__rate {
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 4px 4px 15px rgba(255, 255, 255, 0.5);
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #141414;
+}
+.nav__left-cnt {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 600;
+}
+.nav__item-img {
+  width: 24px;
+  filter: invert(100%);
+}
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+}
+.header__logo {
+  width: 7%;
+  margin-right: 20px;
+}
+
+.movie__container {
+  display: flex;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.info__img {
+  width: 300px;
+  border-radius: 7px;
+}
+.info__cnt {
+  margin-left: 70px;
+}
+.info__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.info__description {
+  margin-top: 50px;
+  text-align: left;
+
+  width: 400px;
+}
+.info__note {
+  font-weight: 600;
+  margin-top: 50px;
+}
+.info__release {
+  margin-top: 50px;
+}
+.trend__cnt {
+  display: flex;
+  column-gap: 7px;
+  flex-wrap: wrap;
+  width: 720px;
+}
+.trend__img {
+  width: 150px;
+  border-radius: 7px;
+}

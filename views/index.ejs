@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav__left-cnt">
+        <img
+          class="header__logo"
+          src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
+          alt="logo"
+        />
+        <nav class="nav__left">
+          <a href="" class="nav__item">Accueil</a
+          ><a href="" class="nav__item">Séries</a
+          ><a href="" class="nav__item">Films</a
+          ><a href="" class="nav__item">Nouveautés les plus regardées</a
+          ><a href="" class="nav__item">Ma liste</a>
+        </nav>
+      </div>
+      <div class="nav__right-cnt">
+        <nav class="nav__right">
+          <a href="" class="nav__item"
+            ><img class="nav__item-img" src="../assets/search.png" alt="" /></a
+          ><a href="" class="nav__item">DIRECT</a
+          ><a href="" class="nav__item"
+            ><img class="nav__item-img" src="../assets/bell.png" alt="" /></a
+          ><a href="" class="nav__item"
+            ><img class="nav__item-img" src="../assets/user.png" alt=""
+          /></a>
+        </nav>
+      </div>
+    </header>
+    <div class="category__cnt">
+      <h2 class="category-title">Tendances actuelles</h2>
+      <div class="movies__cnt">
+        <% trending.forEach(movie => { %>
+        <a href="/<%=movie.id%>">
+          <div class="movie">
+            <img
+              class="movie__img"
+              src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %> "
+              alt="movie image"
+            />
+            <!-- <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p> -->
+          </div>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Découvrir</h2>
+      <div class="movies__cnt">
+        <% discover.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Horreur</h2>
+      <div class="movies__cnt">
+        <% horror.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Thriller</h2>
+      <div class="movies__cnt">
+        <% thriller.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Action</h2>
+      <div class="movies__cnt">
+        <% action.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Comédie</h2>
+      <div class="movies__cnt">
+        <% comedie.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+    <div class="category__cnt">
+      <h2 class="category-title">Drame</h2>
+      <div class="movies__cnt">
+        <% drame.forEach(movie => { %>
+        <div class="movie">
+          <img
+            class="movie__img"
+            src="https://image.tmdb.org/t/p/w500/<%= movie.backdrop_path %> "
+            alt="movie image"
+          />
+          <h2 class="movie__title"><%= movie.title%></h2>
+          <p class="movie__rate"><%= movie.vote_average%>/10</p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>
